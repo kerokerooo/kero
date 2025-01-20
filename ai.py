@@ -63,7 +63,7 @@ def minimax(board, stone, depth, alpha, beta, maximizing_player):
 # AIの動き選択
 class KerokeroAI(object): # クラスの定義
     def face(self):
-        return "🦾"  # 強いAIを示すアイコン
+        return "🐸"  # 強いAIを示すアイコン
 
     def place(self, board, stone):
         best_move = None
