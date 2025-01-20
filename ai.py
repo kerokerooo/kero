@@ -61,7 +61,7 @@ def minimax(board, stone, depth, alpha, beta, maximizing_player):
         return min_eval
 
 # AIの動き選択
-class kerokeroAI(object): # クラスの定義
+class KerokeroAI(object): # クラスの定義
     def face(self):
         return "🦾"  # 強いAIを示すアイコン
 
@@ -120,6 +120,3 @@ def place_move(board, x, y, stone):
 
 def is_game_over(board):
     return not valid_moves(board, BLACK) and not valid_moves(board, WHITE)
-
-# ゲーム実行
-play_othello(kerokeroAI())
